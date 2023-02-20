@@ -1,0 +1,199 @@
+2023-02-18 17:35:16,842 INFO    StreamThr :791701 [internal.py:wandb_internal():87] W&B internal server running at pid: 791701, started at: 2023-02-18 17:35:16.842742
+2023-02-18 17:35:16,844 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: status
+2023-02-18 17:35:16,846 INFO    WriterThread:791701 [datastore.py:open_for_write():85] open: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/run-5htsbuyx.wandb
+2023-02-18 17:35:16,848 DEBUG   SenderThread:791701 [sender.py:send():336] send: header
+2023-02-18 17:35:16,848 DEBUG   SenderThread:791701 [sender.py:send():336] send: run
+2023-02-18 17:35:17,724 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: check_version
+2023-02-18 17:35:17,725 INFO    SenderThread:791701 [dir_watcher.py:__init__():216] watching files in: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files
+2023-02-18 17:35:17,725 INFO    SenderThread:791701 [sender.py:_start_run_threads():1067] run started: 5htsbuyx with start time 1676738116.841918
+2023-02-18 17:35:17,725 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:17,725 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:17,725 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: check_version
+2023-02-18 17:35:17,960 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: run_start
+2023-02-18 17:35:17,968 DEBUG   HandlerThread:791701 [system_info.py:__init__():31] System info init
+2023-02-18 17:35:17,968 DEBUG   HandlerThread:791701 [system_info.py:__init__():46] System info init done
+2023-02-18 17:35:17,968 INFO    HandlerThread:791701 [system_monitor.py:start():151] Starting system monitor
+2023-02-18 17:35:17,968 INFO    SystemMonitor:791701 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-18 17:35:17,968 INFO    HandlerThread:791701 [system_monitor.py:probe():172] Collecting system info
+2023-02-18 17:35:17,969 INFO    SystemMonitor:791701 [interfaces.py:start():168] Started cpu
+2023-02-18 17:35:17,969 INFO    SystemMonitor:791701 [interfaces.py:start():168] Started disk
+2023-02-18 17:35:17,970 INFO    SystemMonitor:791701 [interfaces.py:start():168] Started gpu
+2023-02-18 17:35:17,970 INFO    SystemMonitor:791701 [interfaces.py:start():168] Started memory
+2023-02-18 17:35:17,971 INFO    SystemMonitor:791701 [interfaces.py:start():168] Started network
+2023-02-18 17:35:17,997 DEBUG   HandlerThread:791701 [system_info.py:probe():195] Probing system
+2023-02-18 17:35:17,997 DEBUG   HandlerThread:791701 [git.py:repo():40] git repository is invalid
+2023-02-18 17:35:17,997 DEBUG   HandlerThread:791701 [system_info.py:probe():241] Probing system done
+2023-02-18 17:35:17,997 DEBUG   HandlerThread:791701 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-60-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2023-02-18T16:35:17.997070', 'startedAt': '2023-02-18T16:35:16.838165', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/sebastiaan/fun/goodreads_book_reviews/main.py', 'codePath': 'main.py', 'host': 'glitterbox', 'username': 'sebastiaan', 'executable': '/usr/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2375.756083333333, 'min': 800.0, 'max': 5600.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 1009.073, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}, {'current': 2500.0, 'min': 800.0, 'max': 5600.0}], 'disk': {'total': 915.3232879638672, 'used': 190.21686935424805}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 31.09777069091797}}
+2023-02-18 17:35:17,997 INFO    HandlerThread:791701 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-18 17:35:17,997 INFO    HandlerThread:791701 [system_monitor.py:probe():185] Publishing system info
+2023-02-18 17:35:17,997 DEBUG   HandlerThread:791701 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-18 17:35:17,998 DEBUG   HandlerThread:791701 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-18 17:35:17,998 INFO    HandlerThread:791701 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-18 17:35:18,000 DEBUG   SenderThread:791701 [sender.py:send():336] send: files
+2023-02-18 17:35:18,000 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-02-18 17:35:18,005 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-18 17:35:18,006 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: stop_status
+2023-02-18 17:35:18,412 DEBUG   SenderThread:791701 [sender.py:send():336] send: telemetry
+2023-02-18 17:35:18,412 DEBUG   SenderThread:791701 [sender.py:send():336] send: telemetry
+2023-02-18 17:35:18,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:18,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/requirements.txt
+2023-02-18 17:35:18,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json
+2023-02-18 17:35:18,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-metadata.json
+2023-02-18 17:35:18,977 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-18 17:35:19,139 INFO    wandb-upload_0:791701 [upload_job.py:push():138] Uploaded file /tmp/tmpj15i27wkwandb/wo7vmgef-wandb-metadata.json
+2023-02-18 17:35:19,496 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-18 17:35:19,496 DEBUG   SenderThread:791701 [sender.py:send():336] send: history
+2023-02-18 17:35:19,496 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:19,496 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:19,725 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json
+2023-02-18 17:35:20,020 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-18 17:35:20,020 DEBUG   SenderThread:791701 [sender.py:send():336] send: history
+2023-02-18 17:35:20,020 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:20,021 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:20,530 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-18 17:35:20,530 DEBUG   SenderThread:791701 [sender.py:send():336] send: history
+2023-02-18 17:35:20,530 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:20,531 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:20,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:20,726 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json
+2023-02-18 17:35:21,023 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-18 17:35:21,024 DEBUG   SenderThread:791701 [sender.py:send():336] send: history
+2023-02-18 17:35:21,024 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:21,024 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:21,480 DEBUG   SenderThread:791701 [sender.py:send():336] send: exit
+2023-02-18 17:35:21,480 INFO    SenderThread:791701 [sender.py:send_exit():559] handling exit code: 255
+2023-02-18 17:35:21,480 INFO    SenderThread:791701 [sender.py:send_exit():561] handling runtime: 3
+2023-02-18 17:35:21,480 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:21,480 INFO    SenderThread:791701 [sender.py:send_exit():567] send defer
+2023-02-18 17:35:21,480 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,480 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-18 17:35:21,481 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,481 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-02-18 17:35:21,481 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 1
+2023-02-18 17:35:21,481 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,481 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-18 17:35:21,481 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,481 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-02-18 17:35:21,481 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 2
+2023-02-18 17:35:21,481 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,481 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-18 17:35:21,481 INFO    HandlerThread:791701 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-18 17:35:21,481 DEBUG   SystemMonitor:791701 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-18 17:35:21,481 DEBUG   SystemMonitor:791701 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-18 17:35:21,481 DEBUG   SystemMonitor:791701 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-18 17:35:21,481 INFO    HandlerThread:791701 [interfaces.py:finish():175] Joined cpu
+2023-02-18 17:35:21,481 INFO    HandlerThread:791701 [interfaces.py:finish():175] Joined disk
+2023-02-18 17:35:21,495 INFO    HandlerThread:791701 [interfaces.py:finish():175] Joined gpu
+2023-02-18 17:35:21,495 INFO    HandlerThread:791701 [interfaces.py:finish():175] Joined memory
+2023-02-18 17:35:21,495 INFO    HandlerThread:791701 [interfaces.py:finish():175] Joined network
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 3
+2023-02-18 17:35:21,496 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,496 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send():336] send: history
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: summary_record
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 4
+2023-02-18 17:35:21,496 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,496 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-02-18 17:35:21,496 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 5
+2023-02-18 17:35:21,496 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,496 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-18 17:35:21,496 DEBUG   SenderThread:791701 [sender.py:send():336] send: summary
+2023-02-18 17:35:21,497 INFO    SenderThread:791701 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-18 17:35:21,497 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,497 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-02-18 17:35:21,497 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 6
+2023-02-18 17:35:21,497 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,497 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-18 17:35:21,497 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,497 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-02-18 17:35:21,499 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: status_report
+2023-02-18 17:35:21,727 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:21,728 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json
+2023-02-18 17:35:21,871 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 7
+2023-02-18 17:35:21,872 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:21,872 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-18 17:35:21,872 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:21,872 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-02-18 17:35:22,481 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-18 17:35:22,728 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:22,728 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/config.yaml
+2023-02-18 17:35:22,757 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 8
+2023-02-18 17:35:22,758 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: poll_exit
+2023-02-18 17:35:22,758 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:22,759 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-18 17:35:22,759 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:22,760 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-02-18 17:35:22,760 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 9
+2023-02-18 17:35:22,761 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:22,761 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-18 17:35:22,762 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:22,762 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-02-18 17:35:22,762 INFO    SenderThread:791701 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-18 17:35:23,483 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-18 17:35:23,729 INFO    Thread-13 :791701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:23,730 INFO    SenderThread:791701 [dir_watcher.py:finish():392] scan: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files
+2023-02-18 17:35:23,731 INFO    SenderThread:791701 [dir_watcher.py:finish():406] scan save: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/config.yaml config.yaml
+2023-02-18 17:35:23,731 INFO    SenderThread:791701 [dir_watcher.py:finish():406] scan save: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log output.log
+2023-02-18 17:35:23,731 INFO    SenderThread:791701 [dir_watcher.py:finish():406] scan save: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json wandb-summary.json
+2023-02-18 17:35:23,732 INFO    SenderThread:791701 [dir_watcher.py:finish():406] scan save: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/requirements.txt requirements.txt
+2023-02-18 17:35:23,732 INFO    SenderThread:791701 [dir_watcher.py:finish():406] scan save: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-metadata.json wandb-metadata.json
+2023-02-18 17:35:23,732 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 10
+2023-02-18 17:35:23,732 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: poll_exit
+2023-02-18 17:35:23,733 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:23,733 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-18 17:35:23,740 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:23,740 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-02-18 17:35:23,740 INFO    SenderThread:791701 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-18 17:35:24,483 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-18 17:35:24,483 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: poll_exit
+2023-02-18 17:35:24,710 INFO    wandb-upload_1:791701 [upload_job.py:push():138] Uploaded file /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/config.yaml
+2023-02-18 17:35:25,026 INFO    wandb-upload_3:791701 [upload_job.py:push():138] Uploaded file /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/requirements.txt
+2023-02-18 17:35:25,053 INFO    wandb-upload_2:791701 [upload_job.py:push():138] Uploaded file /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/wandb-summary.json
+2023-02-18 17:35:25,097 INFO    wandb-upload_0:791701 [upload_job.py:push():138] Uploaded file /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/files/output.log
+2023-02-18 17:35:25,298 INFO    Thread-12 (_thread_body):791701 [sender.py:transition_state():587] send defer: 11
+2023-02-18 17:35:25,298 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:25,299 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-18 17:35:25,300 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:25,300 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-02-18 17:35:25,300 INFO    SenderThread:791701 [file_pusher.py:join():167] waiting for file pusher
+2023-02-18 17:35:25,300 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 12
+2023-02-18 17:35:25,301 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:25,301 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-18 17:35:25,302 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:25,302 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-02-18 17:35:25,476 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 13
+2023-02-18 17:35:25,476 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:25,477 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-18 17:35:25,478 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:25,478 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-02-18 17:35:25,478 INFO    SenderThread:791701 [sender.py:transition_state():587] send defer: 14
+2023-02-18 17:35:25,479 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: defer
+2023-02-18 17:35:25,479 INFO    HandlerThread:791701 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-18 17:35:25,480 DEBUG   SenderThread:791701 [sender.py:send():336] send: final
+2023-02-18 17:35:25,481 DEBUG   SenderThread:791701 [sender.py:send():336] send: footer
+2023-02-18 17:35:25,481 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: defer
+2023-02-18 17:35:25,481 INFO    SenderThread:791701 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-02-18 17:35:25,483 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-18 17:35:25,484 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: poll_exit
+2023-02-18 17:35:25,484 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-18 17:35:25,485 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: server_info
+2023-02-18 17:35:25,486 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: poll_exit
+2023-02-18 17:35:25,487 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-18 17:35:25,487 DEBUG   SenderThread:791701 [sender.py:send_request():363] send_request: server_info
+2023-02-18 17:35:25,488 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-18 17:35:26,250 INFO    MainThread:791701 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-02-18 17:35:26,251 INFO    MainThread:791701 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-02-18 17:35:26,251 INFO    MainThread:791701 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-02-18 17:35:26,251 DEBUG   HandlerThread:791701 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-18 17:35:26,252 INFO    HandlerThread:791701 [handler.py:finish():841] shutting down handler
+2023-02-18 17:35:26,487 INFO    WriterThread:791701 [datastore.py:close():299] close: /home/sebastiaan/fun/goodreads_book_reviews/wandb/run-20230218_173516-5htsbuyx/run-5htsbuyx.wandb
+2023-02-18 17:35:27,251 INFO    SenderThread:791701 [sender.py:finish():1493] shutting down sender
+2023-02-18 17:35:27,251 INFO    SenderThread:791701 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-18 17:35:27,251 INFO    SenderThread:791701 [file_pusher.py:join():167] waiting for file pusher

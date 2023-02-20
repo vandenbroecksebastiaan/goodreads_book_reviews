@@ -1,0 +1,99 @@
+{
+    "os": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-02-20T10:14:32.290958",
+    "startedAt": "2023-02-20T10:14:31.317183",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/sebastiaan/fun/goodreads_book_reviews/main.py",
+    "codePath": "main.py",
+    "host": "glitterbox",
+    "username": "sebastiaan",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1778.5236666666667,
+        "min": 800.0,
+        "max": 5600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1718.1,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2032.624,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2119.878,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1084.503,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1015.2,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1098.893,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1135.696,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 782.981,
+            "min": 800.0,
+            "max": 5600.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 190.206787109375
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.097209930419922
+    }
+}

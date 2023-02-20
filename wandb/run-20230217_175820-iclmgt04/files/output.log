@@ -1,0 +1,37 @@
+Epoch:   0%|                                                                                                                     | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 25, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 23, in forward
+    output = self.bn(output)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/batchnorm.py", line 171, in forward
+    return F.batch_norm(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 2450, in batch_norm
+    return torch.batch_norm(
+RuntimeError: running_mean should contain 98304 elements not 49152
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 25, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 23, in forward
+    output = self.bn(output)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/batchnorm.py", line 171, in forward
+    return F.batch_norm(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 2450, in batch_norm
+    return torch.batch_norm(
+RuntimeError: running_mean should contain 98304 elements not 49152

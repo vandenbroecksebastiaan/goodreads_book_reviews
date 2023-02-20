@@ -1,0 +1,43 @@
+Epoch:   0%|                                                                                                                   | 0/1 [00:00<?, ?it/s]
+2it [00:01,  1.21it/s]
+ 0 0 1.8590290546417236
+
+5it [00:03,  1.48it/s]
+ 0 2 1.9393914937973022
+ 0 3 1.904577612876892
+ 0 4 1.8973336219787598
+
+8it [00:05,  1.57it/s]
+ 0 6 1.9178950786590576
+ 0 7 1.9902573823928833
+
+11it [00:07,  1.42it/s]
+ 0 9 1.831899881362915
+ 0 10 1.8309364318847656
+
+14it [00:09,  1.55it/s]
+ 0 12 1.9167457818984985
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 27, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 23, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 35, in train
+    train_loss.backward()
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 27, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 23, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 35, in train
+    train_loss.backward()
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

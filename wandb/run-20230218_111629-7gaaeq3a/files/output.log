@@ -1,0 +1,89 @@
+Epoch:   0%|                                                                                                                     | 0/1 [00:00<?, ?it/s]
+2it [00:01,  1.31it/s]
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 21, in train
+    for idx, data in tqdm(enumerate(train_loader), leave=False):
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 295, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/home/sebastiaan/fun/goodreads_book_reviews/data.py", line 65, in __getitem__
+    x_data = self.tokenizer(self.review_text[index],
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2523, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2629, in _call_one
+    return self.encode_plus(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2702, in encode_plus
+    return self._encode_plus(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 649, in _encode_plus
+    first_ids = get_input_ids(text)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 616, in get_input_ids
+    tokens = self.tokenize(text, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 510, in tokenize
+    escaped_special_toks = [
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 511, in <listcomp>
+    re.escape(s_tok) for s_tok in (self.unique_no_split_tokens + self.all_special_tokens)
+  File "/usr/lib/python3.10/re.py", line 274, in escape
+    return pattern.translate(_special_chars_map)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 21, in train
+    for idx, data in tqdm(enumerate(train_loader), leave=False):
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 295, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/home/sebastiaan/fun/goodreads_book_reviews/data.py", line 65, in __getitem__
+    x_data = self.tokenizer(self.review_text[index],
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2523, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2629, in _call_one
+    return self.encode_plus(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2702, in encode_plus
+    return self._encode_plus(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 649, in _encode_plus
+    first_ids = get_input_ids(text)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 616, in get_input_ids
+    tokens = self.tokenize(text, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 510, in tokenize
+    escaped_special_toks = [
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 511, in <listcomp>
+    re.escape(s_tok) for s_tok in (self.unique_no_split_tokens + self.all_special_tokens)
+  File "/usr/lib/python3.10/re.py", line 274, in escape
+    return pattern.translate(_special_chars_map)
+
+0 18 1.9815634489059448 tensor([2, 5, 0, 2, 5, 4, 0, 1, 0, 2], device='cuda:0')

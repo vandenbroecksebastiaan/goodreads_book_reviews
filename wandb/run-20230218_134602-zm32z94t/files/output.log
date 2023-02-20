@@ -1,0 +1,25 @@
+Epoch:   0%|                                                                             | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 33, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 26, in forward
+    output = self.dropout(output)
+UnboundLocalError: local variable 'output' referenced before assignment
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 33, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 26, in forward
+    output = self.dropout(output)
+UnboundLocalError: local variable 'output' referenced before assignment

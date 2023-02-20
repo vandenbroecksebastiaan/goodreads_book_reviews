@@ -1,0 +1,67 @@
+
+Epoch:   0%|                                                                                                                     | 0/1 [00:00<?, ?it/s]
+Epoch:   0%|                                                                                                                     | 0/1 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 25, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 18, in forward
+    distilbert_output = self.pretrained_model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 579, in forward
+    return self.transformer(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 355, in forward
+    layer_outputs = layer_module(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 290, in forward
+    sa_output = self.attention(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 212, in forward
+    v = shape(self.v_lin(value))  # (bs, n_heads, k_length, dim_per_head)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 11.75 GiB total capacity; 11.09 GiB already allocated; 30.50 MiB free; 11.12 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 26, in <module>
+    main()
+  File "/home/sebastiaan/fun/goodreads_book_reviews/main.py", line 22, in main
+    train(model, train_loader, eval_loader)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/train.py", line 25, in train
+    train_output = model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/fun/goodreads_book_reviews/model.py", line 18, in forward
+    distilbert_output = self.pretrained_model(input_id, attention_mask)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 579, in forward
+    return self.transformer(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 355, in forward
+    layer_outputs = layer_module(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 290, in forward
+    sa_output = self.attention(
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 212, in forward
+    v = shape(self.v_lin(value))  # (bs, n_heads, k_length, dim_per_head)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sebastiaan/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 11.75 GiB total capacity; 11.09 GiB already allocated; 30.50 MiB free; 11.12 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
