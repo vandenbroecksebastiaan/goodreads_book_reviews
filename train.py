@@ -32,11 +32,12 @@ def train(model, train_loader, eval_loader):
             
             input_id = data[0]
             attention_mask = data[1]
-            eval_target = data[2]
+            variables = data[2]
+            eval_target = data[3]
 
             model.train()
             optimizer.zero_grad()
-            train_output = model(input_id, attention_mask)
+            train_output = model(input_id, attention_mask, variables)
             train_loss = criterion(train_output, eval_target.argmax(dim=1))
             train_loss.backward()
             optimizer.step()
@@ -55,9 +56,9 @@ def train(model, train_loader, eval_loader):
 
 
 def validation_step(model, criterion, eval_loader):
-    idx, (input_id, attention_mask, eval_target) = next(enumerate(eval_loader))
+    idx, (input_id, attention_mask, variables, eval_target) = next(enumerate(eval_loader))
     model.eval()
-    eval_output = model(input_id, attention_mask)
+    eval_output = model(input_id, attention_mask, variables)
     eval_loss = criterion(eval_output, eval_target.argmax(dim=1))
 
     eval_output_argmax = eval_output.argmax(dim=1).detach().cpu()

@@ -1,3 +1,4 @@
+import torch
 from torch import nn
 from transformers import AutoModel
 
@@ -14,12 +15,12 @@ class Model(nn.Module):
         self.dropout = nn.Dropout(0.1)
 
         self.bn1 = nn.BatchNorm1d(num_features=768*config["max_length"])
-        self.fc1 = nn.Linear(768*config["max_length"], config["hidden_size"])
+        self.fc1 = nn.Linear(768*config["max_length"] + 5, config["hidden_size"])
 
         self.bn2 = nn.BatchNorm1d(config["hidden_size"])
         self.fc2 = nn.Linear(config["hidden_size"], 6)
 
-    def forward(self, input_id, attention_mask):
+    def forward(self, input_id, attention_mask, variables):
         distilbert_output = self.pretrained_model(input_id, attention_mask)
         last_hidden_state = distilbert_output.last_hidden_state
         last_hidden_state = last_hidden_state.permute((1, 0, 2))
@@ -28,6 +29,8 @@ class Model(nn.Module):
         output = self.dropout(last_hidden_state)
         output = self.relu(last_hidden_state)
         output = self.bn1(output)
+        # Add the extra variables in the dataset
+        output = torch.hstack([output, variables])
         output = self.fc1(output)
 
         output = self.dropout(output)

@@ -1,0 +1,9 @@
+
+Epoch:   0%|                                                                                                                   | 0/1 [00:00<?, ?it/s]
+tensor(4, device='cuda:0')
+torch.Size([131])
+torch.Size([131])
+*** EXTRA PADDED ***
+*** EXTRA PADDED ***
+torch.Size([1000])
+torch.Size([1000])
