@@ -1,0 +1,105 @@
+{
+    "os": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-02-21T13:36:36.492970",
+    "startedAt": "2023-02-21T13:36:35.521791",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/sebastiaan/fun/goodreads_book_reviews/main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/vandenbroecksebastiaan/goodreads_book_reviews.git",
+        "commit": "5c7159112c3b8b316f982bb668ec63386d8542d0"
+    },
+    "email": "van.den.broeck.sebastiaan@gmail.com",
+    "root": "/home/sebastiaan/fun/goodreads_book_reviews",
+    "host": "glitterbox",
+    "username": "sebastiaan",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1791.2030000000002,
+        "min": 800.0,
+        "max": 5600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2831.957,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1769.198,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1355.091,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1263.05,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1325.174,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2079.121,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1949.2,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 1861.165,
+            "min": 800.0,
+            "max": 5600.0
+        },
+        {
+            "current": 799.116,
+            "min": 800.0,
+            "max": 5600.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 191.2273063659668
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.097209930419922
+    }
+}

@@ -23,3 +23,4 @@ config: {'model_name': 'distilbert-base-uncased', 'max_obs': 1000000, 'max_lengt
 2023-02-21 13:16:41,422 INFO    MainThread:269810 [wandb_run.py:_redirect():2059] Redirects installed.
 2023-02-21 13:16:41,423 INFO    MainThread:269810 [wandb_init.py:init():817] run started, returning control to user process
 2023-02-21 13:16:41,424 INFO    MainThread:269810 [wandb_watch.py:watch():51] Watching
+2023-02-21 14:35:33,849 WARNING MsgRouterThr:269810 [router.py:message_loop():77] message_loop has been closed

@@ -9,11 +9,6 @@ import wandb
 from config import config
 
 
-def custom_loss():
-    # Take into account ordinal information regarding the ratings with MSE loss
-    pass
-
-
 def train(model, train_loader, eval_loader):
     optimizer = Adam(model.parameters(), lr=config["lr"])
     if config["use_weights"]:
@@ -50,7 +45,7 @@ def train(model, train_loader, eval_loader):
                 "Eval loss": eval_metrics[0],
                 "Eval f1": eval_metrics[1],
                 "Eval acc": eval_metrics[2]
-            }, step=idx)
+            })
 
     torch.save(model.state_dict(), "model/temp.pt")
 

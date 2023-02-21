@@ -23,13 +23,12 @@ class Model(nn.Module):
     def forward(self, input_id, attention_mask, variables):
         distilbert_output = self.pretrained_model(input_id, attention_mask)
         last_hidden_state = distilbert_output.last_hidden_state
-        last_hidden_state = last_hidden_state.permute((1, 0, 2))
+        # last_hidden_state = last_hidden_state.permute((1, 0, 2))
         last_hidden_state = last_hidden_state.flatten(start_dim=1, end_dim=2)
 
         output = self.dropout(last_hidden_state)
         output = self.relu(last_hidden_state)
         output = self.bn1(output)
-        # Add the extra variables in the dataset
         output = torch.hstack([output, variables])
         output = self.fc1(output)
 

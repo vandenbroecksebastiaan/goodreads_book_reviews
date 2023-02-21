@@ -17,17 +17,16 @@ prediction = []
 
 # Load model
 model = Model()
-model.load_state_dict(torch.load("model/decent-waterfall-24.pt"))
+model.load_state_dict(torch.load("model/rural-oath-45.pt"))
 model.cuda().eval()
 
 # Make predictions
-for idx, (input_id, attention_mask) in tqdm(enumerate(test_loader), total=len(test_loader)):
-    print(input_id.shape, attention_mask.shape)
-    output = model(input_id, attention_mask).argmax(dim=1).detach().cpu().tolist()
+for idx, (input_id, attention_mask, variables) in tqdm(enumerate(test_loader), total=len(test_loader)):
+    output = model(input_id, attention_mask, variables).argmax(dim=1).detach().cpu().tolist()
     prediction.extend(output)
 
 # Save the predictions for submission
-with open("data/prediction_decent-waterfall-24.csv", "w") as file:
+with open("data/prediction_rural-oath-45.csv", "w") as file:
     file = csv.writer(file, delimiter=",")
     file.writerow(["review_id", "rating"])
     for i, j in zip(review_id, prediction):

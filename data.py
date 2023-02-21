@@ -92,7 +92,9 @@ class ReviewDataset(Dataset):
         self.date_read_at = self.date_read_at.apply(
             lambda x: x[2] + " " + x[1] + " " + x[5] if type(x) == list else x
         )
-        self.date_read_at = pd.to_datetime(self.date_read_at, infer_datetime_format=True)
+        self.date_read_at = pd.to_datetime(self.date_read_at,
+                                           infer_datetime_format=True,
+                                           errors="coerce")
         self.date_read_at = (self.date_read_at - self.date_read_at.mean()) \
                                / self.date_read_at.std()
         self.date_read_at = self.date_read_at.fillna(value=0)
@@ -103,7 +105,9 @@ class ReviewDataset(Dataset):
         self.date_started_at = self.date_started_at.apply(
             lambda x: x[2] + " " + x[1] + " " + x[5] if type(x) == list else x
         )
-        self.date_started_at = pd.to_datetime(self.date_started_at)
+        self.date_started_at = pd.to_datetime(self.date_started_at,
+                                              infer_datetime_format=True,
+                                              errors="coerce")
         self.date_started_at = (self.date_started_at - self.date_started_at.mean()) \
                                / self.date_started_at.std()
         self.date_started_at = self.date_started_at.fillna(value=0)
@@ -138,7 +142,7 @@ class ReviewDataset(Dataset):
         if input_id.shape[0] != config["max_length"]:
             input_id = torch.nn.functional.pad(
                 input_id,
-                (0, config["max_length"]-input_id.shape[0]),
+                (0, config["max_length"]-input_id.shape[0]), # TODO: check if 0 is the right index
                 "constant", 0
             ).squeeze()
         if attention_mask.shape[0] != config["max_length"]:
